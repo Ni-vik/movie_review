@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.upperbar li {
+    list-style-type: none;
+    padding : 0.5 rem;
+    color:blue;
+}
+
+.upperbar ul{
+    
+        display : flex;
+        font-size: 16px;
+        justify-content: space-around;
+}
+
+
+.navbar ul{
+    display : flex;
+    font-size: 16px;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding : 0.5 rem;
+}
+
+.navbar li a{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: black;
+}
+
+
+.big-container{
+    display: flex;
+    margin : 7% 7.5% ;
+}
+
+.poster{
+    text-align: center;
+    color:#4D77FF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid grey;
+}
+
+.poster img{
+    width : 500px;
+}
+.poster h3{
+    padding-bottom: 15px;
+}
+.info{
+    margin-left: 6%;
+}
+
+.info button h2{
+    padding : 25px;
+}
+
+.info li, .synopsis-2 li , .synopsis-3 li{
+    list-style-type: none;
+    margin-left: 0%;
+    margin-bottom: 10px;
+}
+
+.critic-review{
+    display : flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.critic-review-item{
+    padding-left: 30px;
+}
+
+.critic-review-item button , .audience-review-item button{
+    background-color: #65C18C;
+    color: white;
+    border-radius:60%;
+    line-height: 30px;
+    border-color: #fff;
+}
+.critic-review-item h4,.audience-review-item h3{
+    margin-top: 30px;
+}
+
+.critic-review-item h3 ,  .audience-review-item h3{
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.critic-review-item h4{
+    margin-bottom: 15px;
+    color:grey;
+    font-weight: bold;
+}
+table{
+    width: 100%;
+}
+
+.audience-review-item table{
+    width: 100%;
+}
+tr{
+    color: grey;
+    font-weight: bolder;
+    text-shadow: grey;
+}
+
+.bold-text{
+    color:black;
+    font-weight: bold;
+}
+.audience-review{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.audience-review-item ,.info h1{
+    padding-left: 30px;
+}
+
+.movie-details {
+    margin : 7% 7.5%;
+}
+
+.movie-details h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: grey;
+    font-weight: bolder;
+}
+
+tr{
+    padding:5px;
+}
+.movie-details-item-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.synopsis-1{
+    flex : 1;
+    padding-right: 30px;
+}
+
+.synopsis-1 p{
+    text-align: left;
+}
+
+.synopsis-2 tr{
+    margin-bottom: 15px;
+}
+.synopsis-2{
+    flex : 2;
+    height:268px;
+}
+
+.blue-text{
+    color:#4D77FF;
+    font-weight: bold;
+}
+.movie-details-item-2{
+    margin-top: 50px;
+
+
+}
+.cast-1 img{
+    height : 40px;
+    width : 40px;
+    border-radius: 50%;
+}
+
+.cast-1 {
+    display : flex;
+    margin-top: 10px;
+    flex-basis: 300px;
+    border: 1px solid grey;
+     border-radius: 5px;
+     flex:1;
+}
+
+.cast-name {
+    margin-left : 10px;
+}
+
+.cast-row-1{
+    display : flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.movie-details-item-3{
+    overflow: auto;
+    display: flex;
+}
+
+.movie-details-item-3 img{
+    height : 200px;
+    width: 200px;
+    margin-top: 7%;
+    margin-left : 3%;
+}
+
+#media{
+    margin-top: 7%;
+}
+
+.movie-details{
+    display : flex;
+    flex-direction: column;
+
+}
+
+.review{
+    margin: 7% 7.5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.audience-full-review{
+    margin: 7% 15%;
+}
+
+.review-box{
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+.review-box-item{
+    border-radius: 5px;
+    border : 0.5px solid grey;
+    padding: 15px;
+    margin: 3px;
+    flex: 1;
+}
+.footer-item p{
+    margin-top: 10px;
+}
+
+.footer{
+    margin: 7% 15%;
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 800px){
+    body{
+        font-size: 12px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar li{
+        padding-top: 15px;
+    }
+    .big-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .critic-review{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .audience-review{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    /*.movie-details-item-3{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    */
+
+    .movie-details-item-1{
+        flex-direction: column;
+    }
+
+    .info button{
+        line-height: 15px;
+        padding: 15px;
+    }
+
+    .info{
+        margin: 0;
+    }
+
+    .poster img{
+        height : 200px;
+        width: 250px;
+    }
+
+    .synopsis-2{
+        margin-top: 7%;
+    }
+
+    .cast-row-1 , .cast-row-2{
+        flex-direction: column;
+    }
+    .review-box{
+        flex-direction: column;
+    }
+
+}
